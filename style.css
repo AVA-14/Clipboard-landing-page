@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    Font-size: 18px;
+    font-family: "Bai Jamjuree", sans-serif;
+}
+
+:root {
+    --green500: hsl(171, 66%, 44%);
+    --blue100: hsl(233, 100%, 69%);
+    --gray700: hsl(210, 10%, 33%);
+    --gray500: hsl(201, 11%, 66%);
+}
+
+.main {
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+} 
+
+.main [alt="logo"] {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main header,
+.main .track,
+.main .download {
+    text-align: center;
+    padding: 0px 15px 50px;
+}
+
+.main header h1 {
+    font-size: 35px;
+    color: var(--gray700);
+}
+
+.main header .btn button,
+.main .download .btn button {
+    border: none;
+    border-radius: 30px;
+    padding: 15px 80px;
+    margin: 25px 0 0;
+    cursor: pointer;
+    box-shadow: inset 0px -3px 2px 0px hsl(168.98deg 45.79% 41.96%);
+}
+
+.main header .btn > :first-child,
+.main .download .btn> :first-child {
+    background-color: var(--green500);
+}
+
+.main header .btn > :last-child,
+.main .download .btn > :last-child {
+    background-color: var(--blue100);
+    box-shadow: inset 0px -3px 2px 0px hsl(231.49deg 66.82% 58.63%);
+}
+
+.main header .btn> :first-child:hover,
+.main .download .btn> :first-child:hover,
+.main header .btn> :last-child:hover,
+.main .download .btn> :last-child:hover {
+    opacity: 0.7;
+}
+
+.main header > p,
+.main .track > p,
+.main .workflow > p,
+.main .access p,
+.main .workflow > div > div p,
+.main .download > p {
+    color: var(--gray500);
+    padding: 20px 0px;
+    line-height: 1.6;
+}
+
+.main .track h2,
+.main .access h2,
+.main .workflow h2,
+.main .download h2 {
+    color: var(--gray700);
+    font-size: 30px;
+}
+
+.main .features img {
+    width: -webkit-fill-available;
+    margin: 20px;
+}
+
+.main .features > div {
+    text-align: center;
+}
+
+.main .features > div h3,
+.main .workflow > div h3  {
+    color: var(--gray700);
+    font-size: 25px;
+    padding: 20px 0;
+}
+
+.main .features > div p {
+    color: var(--gray500);
+    width: 88%;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.main .access {
+    min-width: 50%;
+    text-align: center;
+    margin: 100px auto;
+}
+
+.main .access img {
+    width: -webkit-fill-available;
+    margin-top: 30px;
+}
+
+.main .workflow {
+    text-align: center;
+}
+
+.main .workflow > div > div > img {
+    margin: 60px 0 40px;
+}
+
+.main .workflow > div > div p {
+    padding: 0;
+}
+
+.main .media img {
+    display: block;
+    margin: 80px auto;
+}
+
+footer {
+    background-color: #ededed;
+    text-align: center;
+    padding: 50px;
+}
+
+footer > img {
+    width: 70px;
+    margin-bottom: 30px;
+}
+
+footer .bar ul {
+    list-style: none;
+    margin-bottom: 50px
+}
+
+footer ul li {
+    padding: 20px;
+}
+
+footer ul li a {
+    color: var(--gray700);
+}
+
+footer .media {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (min-width: 768px) {
+    .main picture img{
+        width: 100vw;
+        height: 40vh;
+    }
+    .main header > p,
+    .main .track > p,
+    .main .access p,
+    .main .download > p {
+        width: 600px;
+        margin: 0 auto;
+    }
+    .main header .btn> :first-child,
+    .main .download .btn> :first-child{
+        margin-right: 20px;
+        padding: 15px 50px;
+    }
+    .main header .btn> :last-child,
+    .main .download .btn> :last-child {
+        padding: 15px 50px;
+    }
+    .main .access img {
+        width: 80%;
+    }
+    .main .features {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main .features img {
+        width: 60%;
+        position: relative;
+        left: -160px;
+    }
+    .main .features > div {
+        text-align: start;
+    }
+    .main .features > div p {
+        margin: 0;
+    }
+    .main .track {
+        padding: 0px 15px 40px;
+    }
+    .main .features > div {
+        position: relative;
+        top: -50px;
+        right: 50px;
+    }
+    .main .features > div p {
+        width: 400px;
+    }
+    .main .workflow > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main .workflow > div > div p {
+        font-size: 14px;
+        width: 90%;
+        margin: 0 auto;
+    }    
+    .main .workflow > div > div {
+        width: calc(90%/3);
+    }
+    .main .media {
+        margin: 50px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-align: start;
+    }
+    footer .bar {
+        width: 50%;
+    }
+    footer .bar ul {
+        display: grid;
+        grid-auto-columns: auto auto auto;
+        grid-template-areas: "one two three" "four five .";
+        grid-auto-rows: auto auto;
+        margin-bottom: 0;
+    }
+    footer ul li:nth-child(1) {
+        grid-area: one;
+    }
+    footer ul li:nth-child(2) {
+        grid-area: two;
+    }
+    footer ul li:nth-child(3) {
+        grid-area: three;
+    }
+    footer ul li:nth-child(4) {
+        grid-area: four;
+    }
+    footer ul li:nth-child(5) {
+        grid-area: five;
+    }
+    footer > img {
+        width: 50px;
+    }
+    footer .media {
+        width: 20%;
+    }
+}
